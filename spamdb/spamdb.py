@@ -37,6 +37,7 @@ def main():
     import modules.study as study
     import modules.local as local
     import modules.clas as clas
+    import modules.challenge as challenge
     from modules.env import env
 
     if env.args.list_ratings:
@@ -78,6 +79,7 @@ def main():
         study.update_study_colls()
         local.update_local_colls()
         clas.update_clas_colls()
+        challenge.update_challenge_colls()
 
 if __name__ == "__main__":
     main()

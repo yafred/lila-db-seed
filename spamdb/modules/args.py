@@ -1,5 +1,6 @@
 import argparse
 
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description="""
@@ -138,6 +139,13 @@ def parse_args() -> argparse.Namespace:
         type=int,
         default=10,
         help="(default: 10)"
+    )
+    parser.add_argument(
+        "--challenges",
+        type=int,
+        help="""
+            Creates challenges to user named 'challenged'.  
+        """
     )
     parser.add_argument(
         "--games",
